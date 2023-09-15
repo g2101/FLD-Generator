@@ -20,7 +20,7 @@ function generateBBCode() {
 function copyToClipboard() {
   const outputTextarea = document.getElementById("input-textarea");
   const textarea = document.createElement("textarea");
-  textarea.value = inputTextarea.value;
+  textarea.value = outputTextarea.value;
   document.body.appendChild(textarea);
   textarea.select();
   document.execCommand("copy");
