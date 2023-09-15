@@ -10,7 +10,8 @@ function generateBBCode() {
   const inputTextArea = document.getElementById("input-textarea");
 
   if (inputTextArea.value.includes(bbcode)) {
-    return null }
+    return;
+  }
 
   let bbcode = `[altspoiler=${month} ${year} - OFFICER RECORD]\n`;
 
