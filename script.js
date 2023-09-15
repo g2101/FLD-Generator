@@ -9,7 +9,7 @@ function generateBBCode() {
 
   const inputTextArea = document.getElementById("input-textarea");
 
-  if (inputTextArea.value.includes(bbcode)) {
+  if (inputTextArea.includes(bbcode)) {
     return;
   }
 
