@@ -49,11 +49,11 @@ body {
 }
 
 .date-input label {
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 .date-input input {
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 .checkbox-list ul {
@@ -128,7 +128,7 @@ body {
 
 .button-container button {
   display: block;
-  margin: 10px auto; 
+  margin: 10px auto;
 }
 
 .external-link {
