@@ -9,9 +9,8 @@ function generateBBCode() {
 
   const inputTextarea = document.getElementById("input-textarea");
 
-  if inputTextarea.value() == bbcode {
-    return null;
-  }
+  if inputTextarea.value() == bbcode.value() {
+    return null }
 
   let bbcode = `[altspoiler=${month} ${year} - OFFICER RECORD]\n`;
 
