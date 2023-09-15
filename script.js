@@ -14,7 +14,7 @@ function generateBBCode() {
 
   bbcode += "\n[/altspoiler]";
 
-  document.getElementById("output-textarea").value = bbcode;
+  document.getElementById("input-textarea").value = bbcode;
 }
 
 function copyToClipboard() {
