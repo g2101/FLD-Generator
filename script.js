@@ -7,9 +7,9 @@ function generateBBCode() {
     .toLocaleString("default", { year: "numeric", timeZone: "UTC" })
     .toUpperCase();
 
-  string inputTextArea = document.getElementById("input-textarea");
+  inputTextArea = document.getElementById("input-textarea");
 
-  string bbcode = `[altspoiler=${month} ${year} - OFFICER RECORD]\n`;
+  bbcode = `[altspoiler=${month} ${year} - OFFICER RECORD]\n`;
 
   if (inputTextArea.includes(bbcode)) {
     return;
