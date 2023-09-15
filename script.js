@@ -18,9 +18,9 @@ function generateBBCode() {
 }
 
 function copyToClipboard() {
-  const outputTextarea = document.getElementById("output-textarea");
+  const outputTextarea = document.getElementById("input-textarea");
   const textarea = document.createElement("textarea");
-  textarea.value = outputTextarea.value;
+  textarea.value = inputTextarea.value;
   document.body.appendChild(textarea);
   textarea.select();
   document.execCommand("copy");
