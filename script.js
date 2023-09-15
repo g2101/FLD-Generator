@@ -8,6 +8,11 @@ function generateBBCode() {
     .toUpperCase();
 
   const inputTextarea = document.getElementById("input-textarea");
+
+  if inputTextarea.value() == bbcode {
+    return null;
+  }
+
   let bbcode = `[altspoiler=${month} ${year} - OFFICER RECORD]\n`;
 
   bbcode += inputTextarea.value;
