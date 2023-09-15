@@ -9,11 +9,11 @@ function generateBBCode() {
 
   const inputTextArea = document.getElementById("input-textarea");
 
+  let bbcode = `[altspoiler=${month} ${year} - OFFICER RECORD]\n`;
+
   if (inputTextArea.includes(bbcode)) {
     return;
   }
-
-  let bbcode = `[altspoiler=${month} ${year} - OFFICER RECORD]\n`;
 
   bbcode += inputTextArea.value;
 
