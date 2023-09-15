@@ -1,34 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FLD Log Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1 class="header-text">FLD Log Generator</h1>
-        </div>
-        <div class="bbcode-input">
-            <textarea id="input-textarea" placeholder="Enter text here"></textarea>
-        </div>
-        <div class="button-container">
-            <button type="button" class="action-button" id="generate-button" onclick="generateBBCode()">Generate BBCode</button>
-        </div>
-        <div class="bbcode-output">
-            <textarea id="output-textarea" placeholder="Generated BBCode will appear here" readonly></textarea>
-        </div>
-        <div class="button-container">
-            <button type="button" class="action-button" id="copy-button" onclick="copyToClipboard()">Copy BBCode</button>
-            <br>
-            <a href="https://lspd.gta.world/viewtopic.php?f=583&t=87609" target="_blank" class="external-link red-button">
-                <button type="button" class="action-button" id="personnel-files-button">Go to Personnel File</button>
-            </a>
-        </div>
+      <div class="header">
+        <h1 class="header-text">FLD Log Generator</h1>
+      </div>
+      <div class="bbcode-input">
+        <textarea id="input-textarea" placeholder="Enter text here"></textarea>
+      </div>
+      <div class="button-container">
+        <button
+          type="button"
+          class="action-button"
+          id="generate-button"
+          onclick="generateBBCode()"
+        >
+          Generate BBCode
+        </button>
+      </div>
+      <div class="bbcode-output">
+        <textarea
+          id="output-textarea"
+          placeholder="Generated BBCode will appear here"
+          readonly
+        ></textarea>
+      </div>
+      <div class="button-container">
+        <button
+          type="button"
+          class="action-button"
+          id="copy-button"
+          onclick="copyToClipboard()"
+        >
+          Copy BBCode
+        </button>
+        <br />
+        <a
+          href="https://lspd.gta.world/viewtopic.php?f=583&t=87609"
+          target="_blank"
+          class="external-link red-button"
+        >
+          <button
+            type="button"
+            class="action-button"
+            id="personnel-files-button"
+          >
+            Go to Personnel File
+          </button>
+        </a>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
